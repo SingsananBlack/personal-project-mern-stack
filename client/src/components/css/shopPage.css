@@ -1,0 +1,673 @@
+/* navbar filters category */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+.navbar-filters {
+  display: flex;
+  /* flex: 1; */
+}
+.navbar-filters li {
+  margin: 15px 0px 0px 30px;
+}
+.filters-category a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+}
+.filters-category h2 {
+  text-transform: uppercase;
+  color: #fff;
+}
+.filters-category {
+  flex-basis: 250px;
+  height: 300px;
+  padding: 2rem;
+  margin: 1rem;
+  background: #ff4a4a;
+  border-radius: 40px;
+}
+
+.navbar-filters,
+.filters-category,
+.list-wrap {
+  overflow-y: auto;
+}
+
+/* List product */
+.list-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 1;
+  margin-top: 1rem;
+}
+/* card-item-product */
+.list-box {
+  margin: 1rem 0 0 1.5rem;
+  width: 280px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.list-box:hover {
+  border: 0.1rem solid #444;
+}
+.list-box .list-image {
+  padding: 0.5rem;
+  background: linear-gradient(15deg, #fff 30%, #ff4a4a 30.1%);
+}
+.list-box .list-image img {
+  height: 14.5rem;
+}
+.list-box:hover .list-image {
+  transform: translateY(2.9rem);
+}
+.list-box .list-icons {
+  border-bottom: 0.1rem solid #444;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1;
+  transform: translateY(-100%);
+}
+.list-box:hover .list-icons {
+  transform: translateY(0%);
+}
+.list-box .list-icons a {
+  color: #ff4a4a;
+  font-size: 1.5rem;
+  padding: 1.3rem 1.5rem;
+  text-decoration: none;
+}
+.list-box .list-icons a:hover {
+  background: #27ae60;
+  color: #fff;
+}
+.list-box .list-content {
+  background: #fff;
+  padding: 0.5rem 1rem;
+}
+.list-box .list-content h3 {
+  font-size: 1.1rem;
+  color: #000;
+}
+.list-box .list-content h3:first-child {
+  text-transform: uppercase;
+}
+.list-box .list-content .list-price {
+  font-size: 1.1rem;
+  color: #000;
+  padding-top: 0.1rem;
+}
+.list-box .list-content .list-price span {
+  font-size: 1rem;
+  color: #ff4a4a;
+  text-decoration: line-through;
+}
+
+.shoppage-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.6rem 3rem;
+  border-radius: 0.7rem;
+  border: none;
+  color: #fff;
+  background: #00a745;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+.shoppage-btn:hover {
+  background: #7effb4;
+  color: #000;
+}
+.shoppage-btn-sold-out {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.6rem 3rem;
+  border-radius: 0.7rem;
+  border: none;
+  color: #fff;
+  background: #ff1212;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive Mobile */
+@media only screen and (max-width: 428px) {
+  .navbar-filters {
+    display: block;
+  }
+  .navbar-filters a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .filters-category h2 {
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .filters-category {
+    padding: 2rem;
+    background: #ff4a4a;
+    border-radius: 40px;
+  }
+  /* List product */
+  .list-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 1rem;
+  }
+}
+/* Responsive Tablet */
+@media only screen and (min-width: 768px) {
+  .navbar-filters {
+    display: flex;
+  }
+  .filters-category a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .filters-category h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+  }
+  .filters-category {
+    padding: 2rem;
+    background: #ff4a4a;
+    border-radius: 40px;
+  }
+  /* List product */
+  .list-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+  }
+  /* card-item-product */
+  .list-box {
+    margin: 1rem 0 0 1.5rem;
+    width: 200px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .list-box:hover {
+    border: 0.1rem solid #444;
+  }
+  .list-box .list-image {
+    padding: 0.5rem;
+    background: linear-gradient(15deg, #fff 30%, #ff4a4a 30.1%);
+  }
+  .list-box .list-image img {
+    height: 10rem;
+  }
+  .list-box:hover .list-image {
+    transform: translateY(2.9rem);
+  }
+  .list-box .list-icons {
+    border-bottom: 0.1rem solid #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+  }
+  .list-box:hover .list-icons {
+    transform: translateY(0%);
+  }
+  .list-box .list-icons a {
+    color: #ff4a4a;
+    font-size: 1rem;
+    padding: 1.1rem 1.1rem;
+    text-decoration: none;
+  }
+  .list-box .list-icons a:hover {
+    background: #27ae60;
+    color: #fff;
+  }
+  .list-box .list-content {
+    background: #fff;
+    padding: 0.5rem 0.5rem;
+    height: 44%;
+  }
+  .list-box .list-content h3 {
+    font-size: 0.7rem;
+    color: #000;
+  }
+  .list-box .list-content .list-price {
+    font-size: 0.6rem;
+    color: #000;
+    padding-top: 0.1rem;
+  }
+  .list-box .list-content .list-price span {
+    font-size: 0.5rem;
+    color: #ff4a4a;
+    text-decoration: line-through;
+  }
+  .list-box .list-content a {
+    font-size: 10px;
+  }
+  .sold h6 {
+    font-size: 0.1rem;
+  }
+  .shoppage-btn {
+    margin-top: 0.9rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #00a745;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .shoppage-btn:hover {
+    background: #7effb4;
+    color: #000;
+  }
+  .shoppage-btn-sold-out {
+    margin-top: 0.9rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #ff1212;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+/* Responsive Laptop */
+@media only screen and (min-width: 1024px) {
+  .navbar-filters {
+    display: flex;
+  }
+  .filters-category a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .filters-category h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+  }
+  .filters-category {
+    padding: 2rem;
+    background: #ff4a4a;
+    border-radius: 40px;
+  }
+  /* List product */
+  .list-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+  }
+  /* card-item-product */
+  .list-box {
+    margin: 1rem 0 0 1.5rem;
+    width: 200px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .list-box:hover {
+    border: 0.1rem solid #444;
+  }
+  .list-box .list-image {
+    padding: 0.5rem;
+    background: linear-gradient(15deg, #fff 30%, #ff4a4a 30.1%);
+  }
+  .list-box .list-image img {
+    height: 10rem;
+  }
+  .list-box:hover .list-image {
+    transform: translateY(2.9rem);
+  }
+  .list-box .list-icons {
+    border-bottom: 0.1rem solid #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+  }
+  .list-box:hover .list-icons {
+    transform: translateY(0%);
+  }
+  .list-box .list-icons a {
+    color: #ff4a4a;
+    font-size: 1rem;
+    padding: 1.1rem 1.1rem;
+    text-decoration: none;
+  }
+  .list-box .list-icons a:hover {
+    background: #27ae60;
+    color: #fff;
+  }
+  .list-box .list-content {
+    background: #fff;
+    padding: 0.5rem 0.5rem;
+    height: 44%;
+  }
+  .list-box .list-content h3 {
+    font-size: 0.7rem;
+    color: #000;
+  }
+  .list-box .list-content .list-price {
+    font-size: 0.6rem;
+    color: #000;
+    padding-top: 0.1rem;
+  }
+  .list-box .list-content .list-price span {
+    font-size: 0.5rem;
+    color: #ff4a4a;
+    text-decoration: line-through;
+  }
+  .list-box .list-content a {
+    font-size: 10px;
+  }
+  .shoppage-btn {
+    margin-top: 0.7rem;
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #00a745;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .shoppage-btn:hover {
+    background: #7effb4;
+    color: #000;
+  }
+  .shoppage-btn-sold-out {
+    margin-top: 0.9rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #ff1212;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+/* Responsive Laptop L */
+@media only screen and (min-width: 1440px) {
+  .navbar-filters {
+    display: flex;
+  }
+  .filters-category a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .filters-category h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+  }
+  .filters-category {
+    padding: 2rem;
+    background: #ff4a4a;
+    border-radius: 40px;
+  }
+  /* List product */
+  .list-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 1rem;
+  }
+  /* card-item-product */
+  .list-box {
+    margin: 1rem 0 0 1.5rem;
+    width: 200px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .list-box:hover {
+    border: 0.1rem solid #444;
+  }
+  .list-box .list-image {
+    padding: 0.5rem;
+    background: linear-gradient(15deg, #fff 30%, #ff4a4a 30.1%);
+  }
+  .list-box .list-image img {
+    height: 10.5rem;
+  }
+  .list-box:hover .list-image {
+    transform: translateY(2.9rem);
+  }
+  .list-box .list-icons {
+    border-bottom: 0.1rem solid #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+  }
+  .list-box:hover .list-icons {
+    transform: translateY(0%);
+  }
+  .list-box .list-icons a {
+    color: #ff4a4a;
+    font-size: 1rem;
+    padding: 1.1rem 1.1rem;
+    text-decoration: none;
+  }
+  .list-box .list-icons a:hover {
+    background: #27ae60;
+    color: #fff;
+  }
+  .list-box .list-content {
+    background: #fff;
+    padding: 0.5rem 0.5rem;
+    height: 44%;
+  }
+  .list-box .list-content h3 {
+    font-size: 0.7rem;
+    color: #000;
+  }
+  .list-box .list-content .list-price {
+    font-size: 0.6rem;
+    color: #000;
+    padding-top: 0.1rem;
+  }
+  .list-box .list-content .list-price span {
+    font-size: 0.5rem;
+    color: #ff4a4a;
+    text-decoration: line-through;
+  }
+  .list-box .list-content a {
+    font-size: 10px;
+  }
+  .shoppage-btn {
+    margin-top: 0.4rem;
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #00a745;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .shoppage-btn:hover {
+    background: #7effb4;
+    color: #000;
+  }
+  .shoppage-btn-sold-out {
+    margin-top: 0.4rem;
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #ff1212;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+/* Responsive Laptop L */
+@media only screen and (min-width: 2560px) {
+  .navbar-filters {
+    display: flex;
+  }
+  .filters-category a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .filters-category h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+  }
+  .filters-category {
+    padding: 2rem;
+    background: #ff4a4a;
+    border-radius: 40px;
+  }
+  /* List product */
+  .list-wrap {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 1rem;
+  }
+  /* card-item-product */
+  .list-box {
+    margin: 1rem 0 0 1.5rem;
+    width: 300px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .list-box:hover {
+    border: 0.1rem solid #444;
+  }
+  .list-box .list-image {
+    padding: 0.5rem;
+    background: linear-gradient(15deg, #fff 30%, #ff4a4a 30.1%);
+  }
+  .list-box .list-image img {
+    height: 16.8rem;
+  }
+  .list-box:hover .list-image {
+    transform: translateY(2.9rem);
+  }
+  .list-box .list-icons {
+    border-bottom: 0.1rem solid #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+  }
+  .list-box:hover .list-icons {
+    transform: translateY(0%);
+  }
+  .list-box .list-icons a {
+    color: #ff4a4a;
+    font-size: 1rem;
+    padding: 1.1rem 1.1rem;
+    text-decoration: none;
+  }
+  .list-box .list-icons a:hover {
+    background: #27ae60;
+    color: #fff;
+  }
+  .list-box .list-content {
+    background: #fff;
+    padding: 0.5rem 0.5rem;
+    height: 44%;
+  }
+  .list-box .list-content h3 {
+    font-size: 1rem;
+    color: #000;
+  }
+  .list-box .list-content .list-price {
+    font-size: 1.2rem;
+    color: #000;
+    padding-top: 0.1rem;
+  }
+  .list-box .list-content .list-price span {
+    font-size: 1rem;
+    color: #ff4a4a;
+    text-decoration: line-through;
+  }
+  .list-box .list-content a {
+    font-size: 10px;
+  }
+  .shoppage-btn {
+    margin-top: 0.8rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #00a745;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .shoppage-btn:hover {
+    background: #7effb4;
+    color: #000;
+  }
+  .shoppage-btn-sold-out {
+    margin-top: 0.8rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: #fff;
+    background: #ff1212;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

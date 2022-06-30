@@ -1,0 +1,171 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+.register-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+.register-form-container form {
+  background-color: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  width: 40rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.register-form-container form h3 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: #ff4a4a;
+  text-align: center;
+}
+.register-form-container form span {
+  display: block;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+.register-form-container form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  text-transform: none;
+}
+.register-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.7rem;
+  border: none;
+  color: #fff;
+  background: #00a745;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.register-btn:hover {
+  background: #7effb4;
+  color: #000;
+}
+.register-form-container form .register-btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.register-form-container form p {
+  padding-top: 0.8rem;
+  font-size: 1rem;
+}
+.register-form-container form p a {
+  color: #00a745;
+  text-decoration: underline;
+}
+.register-form-container a:hover {
+  display: inline-block;
+  transform: scale(1.1);
+}
+.register-form-container #close-register-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  font-size: 4rem;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsive Mobile */
+@media all and (max-width: 428px) {
+  .register-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+.register-form-container form {
+  background-color: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  width: 40rem;
+  padding: 1rem;
+}
+.register-form-container input{
+  height: 40px;
+}
+.register-form-container form h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #ff4a4a;
+  text-align: center;
+}
+.register-form-container form span {
+  display: block;
+  font-size: 0.5rem;
+  padding-top: 0.1rem;
+}
+.register-form-container form .box {
+  width: 100%;
+  margin: 0.5rem 0;
+  font-size: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  text-transform: none;
+}
+.register-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.7rem;
+  border: none;
+  color: #fff;
+  background: #00a745;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.register-btn:hover {
+  background: #7effb4;
+  color: #000;
+}
+.register-form-container form .register-btn {
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+.register-form-container form p {
+  padding-top: 0.8rem;
+  font-size: 1rem;
+}
+.register-form-container form p a {
+  color: #00a745;
+  text-decoration: underline;
+}
+.register-form-container a:hover {
+  display: inline-block;
+  transform: scale(1.2);
+}
+.register-form-container #close-register-btn {
+  position: absolute;
+  top: 0.1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+}
